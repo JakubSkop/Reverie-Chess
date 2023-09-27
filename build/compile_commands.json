@@ -1,0 +1,202 @@
+[
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\Game\\App.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Game\\App.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Game/App.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\Game\\MessageQueues.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Game\\MessageQueues.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Game/MessageQueues.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\General\\Utilities.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\General\\Utilities.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/General/Utilities.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\Resources\\EventList.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Resources\\EventList.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Resources/EventList.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\Resources\\ScreenConductor.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Resources\\ScreenConductor.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Resources/ScreenConductor.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\Resources\\SoundPlayer.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Resources\\SoundPlayer.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Resources/SoundPlayer.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\Resources\\SpriteManager.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Resources\\SpriteManager.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Resources/SpriteManager.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\UI\\CustomElement\\ScrollablePage\\ScrollingPageElement.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\CustomElement\\ScrollablePage\\ScrollingPageElement.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/CustomElement/ScrollablePage/ScrollingPageElement.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\UI\\CustomElement\\Slider\\SliderElement.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\CustomElement\\Slider\\SliderElement.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/CustomElement/Slider/SliderElement.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\UI\\CustomSprite\\MemSprite.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\CustomSprite\\MemSprite.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/CustomSprite/MemSprite.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\UI\\Element.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\Element.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/Element.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\UI\\ElementBuilders.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\ElementBuilders.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/ElementBuilders.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\UI\\Screen.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\Screen.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/Screen.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\UI\\Screens\\HomeScreen.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\Screens\\HomeScreen.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/Screens/HomeScreen.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\UI\\Screens\\HomeScreen2.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\Screens\\HomeScreen2.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/Screens/HomeScreen2.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\UI\\Screens\\LevelScreen.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\Screens\\LevelScreen.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/Screens/LevelScreen.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\UI\\Screens\\SettingsScreen.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\Screens\\SettingsScreen.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/Screens/SettingsScreen.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\main.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\main.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/main.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\tests\\MainTesting.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\tests\\MainTesting.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/tests/MainTesting.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\Game\\App.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Game\\App.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Game/App.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\Game\\MessageQueues.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Game\\MessageQueues.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Game/MessageQueues.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\General\\Utilities.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\General\\Utilities.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/General/Utilities.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\Resources\\EventList.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Resources\\EventList.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Resources/EventList.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\Resources\\ScreenConductor.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Resources\\ScreenConductor.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Resources/ScreenConductor.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\Resources\\SoundPlayer.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Resources\\SoundPlayer.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Resources/SoundPlayer.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\Resources\\SpriteManager.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Resources\\SpriteManager.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Resources/SpriteManager.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\UI\\CustomElement\\ScrollablePage\\ScrollingPageElement.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\CustomElement\\ScrollablePage\\ScrollingPageElement.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/CustomElement/ScrollablePage/ScrollingPageElement.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\UI\\CustomElement\\Slider\\SliderElement.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\CustomElement\\Slider\\SliderElement.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/CustomElement/Slider/SliderElement.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\UI\\CustomSprite\\MemSprite.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\CustomSprite\\MemSprite.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/CustomSprite/MemSprite.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\UI\\Element.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\Element.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/Element.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\UI\\ElementBuilders.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\ElementBuilders.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/ElementBuilders.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\UI\\Screen.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\Screen.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/Screen.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\UI\\Screens\\HomeScreen.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\Screens\\HomeScreen.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/Screens/HomeScreen.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\UI\\Screens\\HomeScreen2.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\Screens\\HomeScreen2.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/Screens/HomeScreen2.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\UI\\Screens\\LevelScreen.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\Screens\\LevelScreen.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/Screens/LevelScreen.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\UI\\Screens\\SettingsScreen.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\Screens\\SettingsScreen.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/Screens/SettingsScreen.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build/_deps/googletest-build/googlemock",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/gmock.dir/includes_CXX.rsp -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++20 -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c D:\\Development\\C++\\SFML_GUI3\\build\\_deps\\googletest-src\\googlemock\\src\\gmock-all.cc",
+  "file": "D:/Development/C++/SFML_GUI3/build/_deps/googletest-src/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build/_deps/googletest-build/googlemock",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++20 -o CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c D:\\Development\\C++\\SFML_GUI3\\build\\_deps\\googletest-src\\googlemock\\src\\gmock_main.cc",
+  "file": "D:/Development/C++/SFML_GUI3/build/_deps/googletest-src/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build/_deps/googletest-build/googletest",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/gtest.dir/includes_CXX.rsp -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++20 -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c D:\\Development\\C++\\SFML_GUI3\\build\\_deps\\googletest-src\\googletest\\src\\gtest-all.cc",
+  "file": "D:/Development/C++/SFML_GUI3/build/_deps/googletest-src/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build/_deps/googletest-build/googletest",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++20 -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c D:\\Development\\C++\\SFML_GUI3\\build\\_deps\\googletest-src\\googletest\\src\\gtest_main.cc",
+  "file": "D:/Development/C++/SFML_GUI3/build/_deps/googletest-src/googletest/src/gtest_main.cc"
+}
+]
