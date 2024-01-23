@@ -16,6 +16,27 @@ struct MoveBehaviour{
     std::array<uint8_t, 8> SlidingDistances; //The corresponding max distance the piece can slide for each direction: North, NorthEast, East, SouthEast, South, SouthWest, West, NorthWest
 };
 
+struct PieceBehaviours{
+    MoveBehaviour StandardMoveBehaviour;
+    MoveBehaviour FirstMoveBehaviour;
+    MoveBehaviour StandardAttackBehaviour;
+    MoveBehaviour FirstAttackBehaviour;
+};
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+namespace PresetBehaviours{
+    const PieceBehaviours Null = { { {} , {0,0,0,0,0,0,0,0} }, { {} , {0,0,0,0,0,0,0,0} }, { {} , {0,0,0,0,0,0,0,0} }, { {} , {0,0,0,0,0,0,0,0} } };
+    const PieceBehaviours Pawn = { { {DIRECTIONS::FORWARD} , {0,0,0,0,0,0,0,0} }, { {DIRECTIONS::FORWARD, DIRECTIONS::FORWARD+DIRECTIONS::FORWARD} , {0,0,0,0,0,0,0,0} }, 
+    {{}  , {0,1,0,0,0,0,0,1}}, {{} , {0,1,0,0,0,0,0,1}} };
+    const PieceBehaviours Bishop = { { {} , {0,16,0,16,0,16,0,16} }, { {} , {0,16,0,16,0,16,0,16} }, 
+    {{}  , {0,16,0,16,0,16,0,16}}, {{} , {0,16,0,16,0,16,0,16}} };
+
+    
+
+
+
+
+};
 

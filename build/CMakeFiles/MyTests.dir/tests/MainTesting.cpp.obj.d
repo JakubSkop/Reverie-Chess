@@ -347,6 +347,7 @@ CMakeFiles/MyTests.dir/tests/MainTesting.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/charconv \
  C:/msys64/mingw64/include/c++/13.1.0/span \
  D:/Development/C++/SFML_GUI3/src/Chess/Piece/Information.hpp \
+ D:/Development/C++/SFML_GUI3/src/Chess/Board/GridofTiles.hpp \
  D:/Development/C++/SFML_GUI3/src/Chess/Board/Tile.hpp \
  D:/Development/C++/SFML_GUI3/src/Chess/Move/Move.hpp \
  D:/Development/C++/SFML_GUI3/src/General/Utilities.hpp \

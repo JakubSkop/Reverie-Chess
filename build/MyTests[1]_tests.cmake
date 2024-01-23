@@ -1,5 +1,7 @@
 add_test([=[ChessBoard.CheckDataTypeSizes]=]  [==[D:/Development/C++/SFML_GUI3/build/MyTests.exe]==] [==[--gtest_filter=ChessBoard.CheckDataTypeSizes]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[ChessBoard.CheckDataTypeSizes]=]  PROPERTIES WORKING_DIRECTORY [==[D:/Development/C++/SFML_GUI3/build]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[ChessBoard.PseudoLegalMoves_Test]=]  [==[D:/Development/C++/SFML_GUI3/build/MyTests.exe]==] [==[--gtest_filter=ChessBoard.PseudoLegalMoves_Test]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ChessBoard.PseudoLegalMoves_Test]=]  PROPERTIES WORKING_DIRECTORY [==[D:/Development/C++/SFML_GUI3/build]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
 add_test([=[EventLists.CheckEventFetching]=]  [==[D:/Development/C++/SFML_GUI3/build/MyTests.exe]==] [==[--gtest_filter=EventLists.CheckEventFetching]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[EventLists.CheckEventFetching]=]  PROPERTIES WORKING_DIRECTORY [==[D:/Development/C++/SFML_GUI3/build]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  MyTests_TESTS ChessBoard.CheckDataTypeSizes EventLists.CheckEventFetching)
+set(  MyTests_TESTS ChessBoard.CheckDataTypeSizes ChessBoard.PseudoLegalMoves_Test EventLists.CheckEventFetching)

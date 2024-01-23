@@ -2,28 +2,38 @@
 #include "Behaviour.hpp"
 #include "Information.hpp"
 
-enum class Colour : uint8_t{
-    White,
-    Black,
-    Neutral,
+struct PieceInfo{
+    std::string_view name;
 };
 
-struct PieceBehaviours{
-    MoveBehaviour StandardMoveBehaviour;
-    MoveBehaviour FirstMoveBehaviour;
-};
 
 //Class that contains a piece behaviour with some additional data
 //Pieces are pure data - all operations are handled by the board
 struct Piece{
-    sf::Vector2<uint8_t> Position;
+    sf::Vector2<int8_t> Position;
+    PieceBehaviours Behaviour;
     PieceCategory Category;
-    Colour Team;
+    PieceInfo information;
+    bool Team;
     bool HasMoved;
-    bool Indestructible;
-    uint8_t BehaviourIndex; //Holds an index to a behaviour in the board PieceBehaviourList
+    bool InCheck;
+    bool Alive = true;
 };
-//7 bytes large right now
+
+uint8_t VecToIndex(sf::Vector2<int8_t> Position);
+
+sf::Vector2<int8_t> IndexToVec(uint8_t Position);
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
+
+
+namespace Pieces{
+    constexpr PieceInfo PawnInfo = {"Basic_Pawn"};
+    auto inline PawnFactory = [](sf::Vector2<int8_t> pos, bool team){return Piece{pos, PresetBehaviours::Pawn, PieceCategory::Pawn, PawnInfo, team, false, false };};
+    constexpr PieceInfo BishopInfo = {"Basic_Bishop"};
+    auto inline BishopFactory = [](sf::Vector2<int8_t> pos, bool team){return Piece{pos, PresetBehaviours::Bishop, PieceCategory::Bishop, BishopInfo, team, false, false };};
+    constexpr PieceInfo NullInfo = {""};
+    auto inline NullFactory = [](){return Piece{{0,0}, PresetBehaviours::Null, PieceCategory::Pawn, NullInfo, false, false, false };};
+
+};

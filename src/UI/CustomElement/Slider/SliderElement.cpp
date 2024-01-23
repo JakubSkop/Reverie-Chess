@@ -56,4 +56,4 @@ Element<IntSlider> BasicSliderBuilder(IntSlider image, int minValue, int maxValu
     slider.StateStack.push(StandardState);
     return slider;
 
-}
+};

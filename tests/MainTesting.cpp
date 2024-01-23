@@ -7,14 +7,25 @@
 // First test to make sure test suite works - Does some basic assertions on global constants.
 TEST(ChessBoard, CheckDataTypeSizes) {
   // Expect equality.
-  EXPECT_GE(8, sizeof(Piece));
-  EXPECT_EQ(3, sizeof(Move));
+  EXPECT_GE(144, sizeof(Piece));
+  EXPECT_EQ(5, sizeof(Move));
 }
 
 
+TEST(ChessBoard, PseudoLegalMoves_Test) {
+  // Expect equality.
 
+  ChessBoard board = ChessBoard();
+  Piece pawn1 = Pieces::PawnFactory({0,0}, true);
+  board.AddPiece(pawn1, 0);
 
+  auto res = board.GeneratePseudoLegalMoves(pawn1);
 
+  for (auto i: res){
+    std::cout << i;
+  }
+
+}
 
 
 

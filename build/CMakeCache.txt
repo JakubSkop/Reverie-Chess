@@ -373,6 +373,9 @@ FLAC_LIB:FILEPATH=D:/Development/C++/SFML_GUI3/SFML/lib/libFLAC.a
 //Path to a library.
 FreeType_LIB:FILEPATH=D:/Development/C++/SFML_GUI3/SFML/lib/libfreetype.a
 
+//Path to a program.
+GITCOMMAND:FILEPATH=D:/Git/cmd/git.exe
+
 //Use Abseil and RE2. Requires Abseil and RE2 to be separately
 // added to the build.
 GTEST_HAS_ABSL:BOOL=OFF
@@ -702,6 +705,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[D:/SystemSoftware/Python/python.ex
 FLAC_LIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: FreeType_LIB
 FreeType_LIB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GITCOMMAND
+GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MAKECOMMAND
 MAKECOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_COMMAND

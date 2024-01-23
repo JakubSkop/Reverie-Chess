@@ -23,25 +23,25 @@ std::shared_ptr<Screen> LevelScreen(Resources resources){
     auto level1Sprite = spriteHolder->AccessSprite("Level1Button");
     CenterOrigin(level1Sprite);
     level1Sprite.setPosition(35.0_perW, 55.0_perH);
-    UI::Element<MemSprite> level1 = BasicButtonBuilder(level1Sprite, [conductor](){conductor->PopScreen();}, 10, 100ms, 20);
+    UI::Element<MemSprite> level1 = BasicButtonBuilder(level1Sprite, [conductor](){conductor->PushScreen("Level1");}, 10, 100ms, 20);
 
     //Level Button 2
     auto level2Sprite = spriteHolder->AccessSprite("Level2Button");
     CenterOrigin(level2Sprite);
     level2Sprite.setPosition(71.0_perW, 26.0_perH);
-    UI::Element<MemSprite> level2 = BasicButtonBuilder(level2Sprite, [conductor](){conductor->PopScreen();}, 10, 100ms, 20);
+    UI::Element<MemSprite> level2 = BasicButtonBuilder(level2Sprite, [conductor](){conductor->PushScreen("Level2");}, 10, 100ms, 20);
 
     //Level Button 3
     auto level3Sprite = spriteHolder->AccessSprite("Level3Button");
     CenterOrigin(level3Sprite);
     level3Sprite.setPosition(50.0_perW, -30.0_perH);
-    UI::Element<MemSprite> level3 = BasicButtonBuilder(level3Sprite, [conductor](){conductor->PopScreen();}, 10, 100ms, 20);
+    UI::Element<MemSprite> level3 = BasicButtonBuilder(level3Sprite, [conductor](){conductor->PushScreen("Level3");}, 10, 100ms, 20);
 
     //Level Button 4
     auto level4Sprite = spriteHolder->AccessSprite("Level4Button");
     CenterOrigin(level4Sprite);
     level4Sprite.setPosition(20.0_perW, -70.0_perH);
-    UI::Element<MemSprite> level4 = BasicButtonBuilder(level4Sprite, [conductor](){conductor->PopScreen();}, 10, 100ms, 20);
+    UI::Element<MemSprite> level4 = BasicButtonBuilder(level4Sprite, [conductor](){conductor->PushScreen("Level4");}, 10, 100ms, 20);
 
 
 

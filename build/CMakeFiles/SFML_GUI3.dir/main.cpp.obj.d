@@ -327,4 +327,14 @@ CMakeFiles/SFML_GUI3.dir/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/charconv \
  C:/msys64/mingw64/include/c++/13.1.0/span \
  C:/msys64/mingw64/include/c++/13.1.0/variant \
- C:/msys64/mingw64/include/c++/13.1.0/iostream
+ C:/msys64/mingw64/include/c++/13.1.0/iostream \
+ D:\Development\C++\SFML_GUI3\src/Chess/Board/Board.hpp \
+ D:/Development/C++/SFML_GUI3/src/Chess/Piece/Pieces.hpp \
+ D:/Development/C++/SFML_GUI3/src/Chess/Piece/Behaviour.hpp \
+ D:/Development/C++/SFML_GUI3/src/Chess/Piece/Information.hpp \
+ D:\Development\C++\SFML_GUI3\src/Chess/Board/GridofTiles.hpp \
+ D:\Development\C++\SFML_GUI3\src/Chess/Board/Tile.hpp \
+ D:/Development/C++/SFML_GUI3/src/Chess/Move/Move.hpp \
+ D:/Development/C++/SFML_GUI3/src/General/Utilities.hpp \
+ D:/Development/C++/SFML_GUI3/src/General/Utilities.tpp \
+ C:/msys64/mingw64/include/c++/13.1.0/bitset

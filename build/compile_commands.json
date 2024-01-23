@@ -1,6 +1,21 @@
 [
 {
   "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\Chess\\Board\\Board.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Chess\\Board\\Board.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Chess/Board/Board.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\Chess\\Move\\Move.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Chess\\Move\\Move.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Chess/Move/Move.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\Chess\\Piece\\Pieces.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Chess\\Piece\\Pieces.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Chess/Piece/Pieces.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\Game\\App.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Game\\App.cpp",
   "file": "D:/Development/C++/SFML_GUI3/src/Game/App.cpp"
 },
@@ -33,6 +48,11 @@
   "directory": "D:/Development/C++/SFML_GUI3/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\Resources\\SpriteManager.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Resources\\SpriteManager.cpp",
   "file": "D:/Development/C++/SFML_GUI3/src/Resources/SpriteManager.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\UI\\CustomElement\\Gameboard\\BoardElement.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\CustomElement\\Gameboard\\BoardElement.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/CustomElement/Gameboard/BoardElement.cpp"
 },
 {
   "directory": "D:/Development/C++/SFML_GUI3/build",
@@ -86,6 +106,11 @@
 },
 {
   "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\UI\\Screens\\TeamSelectScreen.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\Screens\\TeamSelectScreen.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/Screens/TeamSelectScreen.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\main.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\main.cpp",
   "file": "D:/Development/C++/SFML_GUI3/main.cpp"
 },
@@ -93,6 +118,21 @@
   "directory": "D:/Development/C++/SFML_GUI3/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\tests\\MainTesting.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\tests\\MainTesting.cpp",
   "file": "D:/Development/C++/SFML_GUI3/tests/MainTesting.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\Chess\\Board\\Board.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Chess\\Board\\Board.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Chess/Board/Board.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\Chess\\Move\\Move.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Chess\\Move\\Move.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Chess/Move/Move.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\Chess\\Piece\\Pieces.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Chess\\Piece\\Pieces.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Chess/Piece/Pieces.cpp"
 },
 {
   "directory": "D:/Development/C++/SFML_GUI3/build",
@@ -128,6 +168,11 @@
   "directory": "D:/Development/C++/SFML_GUI3/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\Resources\\SpriteManager.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Resources\\SpriteManager.cpp",
   "file": "D:/Development/C++/SFML_GUI3/src/Resources/SpriteManager.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\UI\\CustomElement\\Gameboard\\BoardElement.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\CustomElement\\Gameboard\\BoardElement.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/CustomElement/Gameboard/BoardElement.cpp"
 },
 {
   "directory": "D:/Development/C++/SFML_GUI3/build",
@@ -178,6 +223,11 @@
   "directory": "D:/Development/C++/SFML_GUI3/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\UI\\Screens\\SettingsScreen.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\Screens\\SettingsScreen.cpp",
   "file": "D:/Development/C++/SFML_GUI3/src/UI/Screens/SettingsScreen.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\UI\\Screens\\TeamSelectScreen.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\UI\\Screens\\TeamSelectScreen.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/UI/Screens/TeamSelectScreen.cpp"
 },
 {
   "directory": "D:/Development/C++/SFML_GUI3/build/_deps/googletest-build/googlemock",

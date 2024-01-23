@@ -656,6 +656,87 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Chess/Board/Board.obj: src/Chess/Board/Board.cpp.obj
+.PHONY : src/Chess/Board/Board.obj
+
+# target to build an object file
+src/Chess/Board/Board.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/Chess/Board/Board.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/Chess/Board/Board.cpp.obj
+.PHONY : src/Chess/Board/Board.cpp.obj
+
+src/Chess/Board/Board.i: src/Chess/Board/Board.cpp.i
+.PHONY : src/Chess/Board/Board.i
+
+# target to preprocess a source file
+src/Chess/Board/Board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/Chess/Board/Board.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/Chess/Board/Board.cpp.i
+.PHONY : src/Chess/Board/Board.cpp.i
+
+src/Chess/Board/Board.s: src/Chess/Board/Board.cpp.s
+.PHONY : src/Chess/Board/Board.s
+
+# target to generate assembly for a file
+src/Chess/Board/Board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/Chess/Board/Board.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/Chess/Board/Board.cpp.s
+.PHONY : src/Chess/Board/Board.cpp.s
+
+src/Chess/Move/Move.obj: src/Chess/Move/Move.cpp.obj
+.PHONY : src/Chess/Move/Move.obj
+
+# target to build an object file
+src/Chess/Move/Move.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/Chess/Move/Move.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/Chess/Move/Move.cpp.obj
+.PHONY : src/Chess/Move/Move.cpp.obj
+
+src/Chess/Move/Move.i: src/Chess/Move/Move.cpp.i
+.PHONY : src/Chess/Move/Move.i
+
+# target to preprocess a source file
+src/Chess/Move/Move.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/Chess/Move/Move.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/Chess/Move/Move.cpp.i
+.PHONY : src/Chess/Move/Move.cpp.i
+
+src/Chess/Move/Move.s: src/Chess/Move/Move.cpp.s
+.PHONY : src/Chess/Move/Move.s
+
+# target to generate assembly for a file
+src/Chess/Move/Move.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/Chess/Move/Move.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/Chess/Move/Move.cpp.s
+.PHONY : src/Chess/Move/Move.cpp.s
+
+src/Chess/Piece/Pieces.obj: src/Chess/Piece/Pieces.cpp.obj
+.PHONY : src/Chess/Piece/Pieces.obj
+
+# target to build an object file
+src/Chess/Piece/Pieces.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/Chess/Piece/Pieces.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/Chess/Piece/Pieces.cpp.obj
+.PHONY : src/Chess/Piece/Pieces.cpp.obj
+
+src/Chess/Piece/Pieces.i: src/Chess/Piece/Pieces.cpp.i
+.PHONY : src/Chess/Piece/Pieces.i
+
+# target to preprocess a source file
+src/Chess/Piece/Pieces.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/Chess/Piece/Pieces.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/Chess/Piece/Pieces.cpp.i
+.PHONY : src/Chess/Piece/Pieces.cpp.i
+
+src/Chess/Piece/Pieces.s: src/Chess/Piece/Pieces.cpp.s
+.PHONY : src/Chess/Piece/Pieces.s
+
+# target to generate assembly for a file
+src/Chess/Piece/Pieces.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/Chess/Piece/Pieces.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/Chess/Piece/Pieces.cpp.s
+.PHONY : src/Chess/Piece/Pieces.cpp.s
+
 src/Game/App.obj: src/Game/App.cpp.obj
 .PHONY : src/Game/App.obj
 
@@ -844,6 +925,33 @@ src/Resources/SpriteManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/Resources/SpriteManager.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/Resources/SpriteManager.cpp.s
 .PHONY : src/Resources/SpriteManager.cpp.s
+
+src/UI/CustomElement/Gameboard/BoardElement.obj: src/UI/CustomElement/Gameboard/BoardElement.cpp.obj
+.PHONY : src/UI/CustomElement/Gameboard/BoardElement.obj
+
+# target to build an object file
+src/UI/CustomElement/Gameboard/BoardElement.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/UI/CustomElement/Gameboard/BoardElement.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/UI/CustomElement/Gameboard/BoardElement.cpp.obj
+.PHONY : src/UI/CustomElement/Gameboard/BoardElement.cpp.obj
+
+src/UI/CustomElement/Gameboard/BoardElement.i: src/UI/CustomElement/Gameboard/BoardElement.cpp.i
+.PHONY : src/UI/CustomElement/Gameboard/BoardElement.i
+
+# target to preprocess a source file
+src/UI/CustomElement/Gameboard/BoardElement.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/UI/CustomElement/Gameboard/BoardElement.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/UI/CustomElement/Gameboard/BoardElement.cpp.i
+.PHONY : src/UI/CustomElement/Gameboard/BoardElement.cpp.i
+
+src/UI/CustomElement/Gameboard/BoardElement.s: src/UI/CustomElement/Gameboard/BoardElement.cpp.s
+.PHONY : src/UI/CustomElement/Gameboard/BoardElement.s
+
+# target to generate assembly for a file
+src/UI/CustomElement/Gameboard/BoardElement.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/UI/CustomElement/Gameboard/BoardElement.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/UI/CustomElement/Gameboard/BoardElement.cpp.s
+.PHONY : src/UI/CustomElement/Gameboard/BoardElement.cpp.s
 
 src/UI/CustomElement/ScrollablePage/ScrollingPageElement.obj: src/UI/CustomElement/ScrollablePage/ScrollingPageElement.cpp.obj
 .PHONY : src/UI/CustomElement/ScrollablePage/ScrollingPageElement.obj
@@ -1115,6 +1223,33 @@ src/UI/Screens/SettingsScreen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/UI/Screens/SettingsScreen.cpp.s
 .PHONY : src/UI/Screens/SettingsScreen.cpp.s
 
+src/UI/Screens/TeamSelectScreen.obj: src/UI/Screens/TeamSelectScreen.cpp.obj
+.PHONY : src/UI/Screens/TeamSelectScreen.obj
+
+# target to build an object file
+src/UI/Screens/TeamSelectScreen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/UI/Screens/TeamSelectScreen.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/UI/Screens/TeamSelectScreen.cpp.obj
+.PHONY : src/UI/Screens/TeamSelectScreen.cpp.obj
+
+src/UI/Screens/TeamSelectScreen.i: src/UI/Screens/TeamSelectScreen.cpp.i
+.PHONY : src/UI/Screens/TeamSelectScreen.i
+
+# target to preprocess a source file
+src/UI/Screens/TeamSelectScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/UI/Screens/TeamSelectScreen.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/UI/Screens/TeamSelectScreen.cpp.i
+.PHONY : src/UI/Screens/TeamSelectScreen.cpp.i
+
+src/UI/Screens/TeamSelectScreen.s: src/UI/Screens/TeamSelectScreen.cpp.s
+.PHONY : src/UI/Screens/TeamSelectScreen.s
+
+# target to generate assembly for a file
+src/UI/Screens/TeamSelectScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/UI/Screens/TeamSelectScreen.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/UI/Screens/TeamSelectScreen.cpp.s
+.PHONY : src/UI/Screens/TeamSelectScreen.cpp.s
+
 tests/MainTesting.obj: tests/MainTesting.cpp.obj
 .PHONY : tests/MainTesting.obj
 
@@ -1191,6 +1326,15 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Chess/Board/Board.obj
+	@echo ... src/Chess/Board/Board.i
+	@echo ... src/Chess/Board/Board.s
+	@echo ... src/Chess/Move/Move.obj
+	@echo ... src/Chess/Move/Move.i
+	@echo ... src/Chess/Move/Move.s
+	@echo ... src/Chess/Piece/Pieces.obj
+	@echo ... src/Chess/Piece/Pieces.i
+	@echo ... src/Chess/Piece/Pieces.s
 	@echo ... src/Game/App.obj
 	@echo ... src/Game/App.i
 	@echo ... src/Game/App.s
@@ -1212,6 +1356,9 @@ help:
 	@echo ... src/Resources/SpriteManager.obj
 	@echo ... src/Resources/SpriteManager.i
 	@echo ... src/Resources/SpriteManager.s
+	@echo ... src/UI/CustomElement/Gameboard/BoardElement.obj
+	@echo ... src/UI/CustomElement/Gameboard/BoardElement.i
+	@echo ... src/UI/CustomElement/Gameboard/BoardElement.s
 	@echo ... src/UI/CustomElement/ScrollablePage/ScrollingPageElement.obj
 	@echo ... src/UI/CustomElement/ScrollablePage/ScrollingPageElement.i
 	@echo ... src/UI/CustomElement/ScrollablePage/ScrollingPageElement.s
@@ -1242,6 +1389,9 @@ help:
 	@echo ... src/UI/Screens/SettingsScreen.obj
 	@echo ... src/UI/Screens/SettingsScreen.i
 	@echo ... src/UI/Screens/SettingsScreen.s
+	@echo ... src/UI/Screens/TeamSelectScreen.obj
+	@echo ... src/UI/Screens/TeamSelectScreen.i
+	@echo ... src/UI/Screens/TeamSelectScreen.s
 	@echo ... tests/MainTesting.obj
 	@echo ... tests/MainTesting.i
 	@echo ... tests/MainTesting.s
