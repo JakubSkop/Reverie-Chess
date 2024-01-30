@@ -7,9 +7,13 @@
 
 struct BoardComponent{
     ChessBoard Board;
+    sf::Vector2i CurrentLocation;
+    bool currentTeam;
+    std::vector<Move> currentMoves;
     std::array<MemSprite, Constants::MAX_BOARD_SIZE> Tiles;
-    std::vector<MemSprite> Pieces;
-    MemSprite CurrentPiece;
-    std::vector<MemSprite> PossibleMoves;
+    std::vector<MemSprite> PromotionOverlay;
+    std::array<MemSprite, Constants::MAX_BOARD_SIZE> Pieces;
+    MemSprite CurrentPieceOverlay;
+    std::array<MemSprite, Constants::MAX_BOARD_SIZE> PossibleMoves;
 };
 

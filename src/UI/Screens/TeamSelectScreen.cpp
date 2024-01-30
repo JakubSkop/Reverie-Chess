@@ -1,4 +1,6 @@
 #include "ScreensImpl.hpp"
+#include "UI/CustomElement/Gameboard/BoardElement.hpp"
+#include "Chess/Board/Board.hpp"
 
 std::shared_ptr<Screen> TeamSelectScreen(Resources resources, unsigned int levelNum){
     auto spriteHolder = resources.spriteManager;
@@ -20,13 +22,23 @@ std::shared_ptr<Screen> TeamSelectScreen(Resources resources, unsigned int level
     //Level Title
     auto Text_Level = sf::Text("Level " + std::to_string(levelNum), resources.settings->fonts->PrimaryFont, 50);
     CenterOrigin(Text_Level);
-    Text_Level.setPosition(82.0_perW, 8.0_perH);
+    Text_Level.setPosition(82.0_perW, 6.5_perH);
     auto text_level = StaticImage(Text_Level);
+
+    //Board
+    ChessBoard board = ChessBoard();
+    board.SetTileMap(PresetTileMaps::Diamond);
+    Piece pawn1 = Pieces::PawnFactory({5,5}, false);
+    Piece bish = Pieces::BishopFactory({6,6}, true);
+    board.AddPiece(pawn1);
+    board.AddPiece(bish);
+    UI::Element<BoardComponent> chess = GameBoardBuilder(board, {159,159}, resources).getObject();
 
     
     home->Elements.push_back(std::make_shared<UI::Element<MemSprite>>(Splash));
     home->Elements.push_back(std::make_shared<UI::Element<MemSprite>>(backButton));
     home->Elements.push_back(std::make_shared<UI::Element<Text>>(text_level));
+    home->Elements.push_back(std::make_shared<UI::Element<BoardComponent>>(chess));
 
     return home;
 }

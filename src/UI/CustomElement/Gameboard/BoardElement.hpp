@@ -1,8 +1,8 @@
 #pragma once
 
 #include "BoardComponent.hpp"
-#include "Element.hpp"
-#include "State.hpp"
+#include "UI/Element.hpp"
+#include "Ui/State.hpp"
 #include <chrono>
 #include "UI/CustomSprite/MemSprite.hpp"
 #include "General/Constants.hpp"
@@ -19,4 +19,7 @@ class GameBoardBuilder{
     public:
         GameBoardBuilder(ChessBoard board, sf::Vector2f position, Resources resources);
         Element<BoardComponent> getObject();
+        void RefreshTiles(sf::Vector2f position, Resources resources);
+        void RefreshPieces(Element<BoardComponent>& gameboard1, sf::Vector2f position, Resources resources);
+
 };

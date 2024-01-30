@@ -106,12 +106,22 @@ void Application::Setup(){
     SpriteHolder->AddSprite("Level3Button", "ButtonTileSheet", {{60,97},{30,30}}, 4.0f);
     SpriteHolder->AddSprite("Level4Button", "ButtonTileSheet", {{90,97},{30,30}}, 4.0f);
 
-    SpriteHolder->AddSprite("RegularTile1", "PieceSpriteSheet", {{0,0},{32,32}}, 3.0f);
-    SpriteHolder->AddSprite("RegularTile2", "PieceSpriteSheet", {{32,0},{64,32}}, 3.0f);
-    SpriteHolder->AddSprite("InactiveTile", "PieceSpriteSheet", {{64,0},{96,32}}, 3.0f);
+    SpriteHolder->AddSprite("RegularTile1", "PieceSpriteSheet", {{0,0},{32,32}}, 1.5f);
+    SpriteHolder->AddSprite("RegularTile2", "PieceSpriteSheet", {{32,0},{32,32}}, 1.5f);
+    SpriteHolder->AddSprite("InactiveTile1", "PieceSpriteSheet", {{64,0},{32,32}}, 1.5f);
+    SpriteHolder->AddSprite("InactiveTile2", "PieceSpriteSheet", {{96,0},{32,32}}, 1.5f);
+    SpriteHolder->AddSprite("WhitePromotionOverlay", "PieceSpriteSheet", {{128,0},{32,32}}, 1.5f);
+    SpriteHolder->AddSprite("BlackPromotionOverlay", "PieceSpriteSheet", {{160,0},{32,32}}, 1.5f);
+    SpriteHolder->AddSprite("CurrentTileOverlay", "PieceSpriteSheet", {{192,0},{32,32}}, 1.5f);
+    SpriteHolder->AddSprite("MixedPromotionOverlay", "PieceSpriteSheet", {{224,0},{32,32}}, 1.5f);
+    SpriteHolder->AddSprite("Null", "PieceSpriteSheet", {{256,0},{32,32}}, 1.5f);
+    SpriteHolder->AddSprite("MoveOverlay", "PieceSpriteSheet", {{288,0},{32,32}}, 1.5f);
 
-    SpriteHolder->AddSprite("White_Basic_Pawn", "PieceSpriteSheet", {{0,32},{32,64}}, 3.0f);
-    SpriteHolder->AddSprite("Black_Basic_Pawn", "PieceSpriteSheet", {{0,64},{32,96}}, 3.0f);
+    SpriteHolder->AddSprite("White_Basic_Pawn", "PieceSpriteSheet", {{0,32},{32,32}}, 1.5f);
+    SpriteHolder->AddSprite("Black_Basic_Pawn", "PieceSpriteSheet", {{0,64},{32,32}}, 1.5f);
+
+    SpriteHolder->AddSprite("White_Basic_Bishop", "PieceSpriteSheet", {{0,160},{32,32}}, 1.5f);
+    SpriteHolder->AddSprite("Black_Basic_Bishop", "PieceSpriteSheet", {{0,192},{32,32}}, 1.5f);
 
     std::shared_ptr<Screen> home = HomeScreen(resources);
     std::shared_ptr<Screen> home2 = HomeScreen2(resources);

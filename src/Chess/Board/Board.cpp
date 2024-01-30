@@ -102,6 +102,9 @@ void ChessBoard::Play(Move move){
 
         Piece& some_piece = PieceList[Grid.PieceGrid[move.from]];
         Piece& captured_piece = PieceList[Grid.PieceGrid[move.to]];
+
+        some_piece.Position = IndexToVec(move.to);
+
         some_piece.HasMoved = true;
         captured_piece.Alive = false; 
 
@@ -144,7 +147,7 @@ void ChessBoard::Unplay(Move move){ //input parameter represents last played mov
 
 
 
-std::vector<Move> ChessBoard::GeneratePseudoLegalMoves_NonCapture(Piece& piece){
+std::vector<Move> ChessBoard::GeneratePseudoLegalMoves_NonCapture(const Piece& piece){
 
     MoveBehaviour moveBehaviour;
     if (piece.HasMoved){
@@ -177,8 +180,14 @@ std::vector<Move> ChessBoard::GeneratePseudoLegalMoves_NonCapture(Piece& piece){
 
             if (isJumpTileActive && isJumpTileEmpty){
 
-                TileType jumpTile = Grid.TileList[jumpPos].type;
-                bool isJumpTilePromoting = (jumpTile == TileType::JOINT_PROMOTION) || (jumpTile == static_cast<TileType>(team)); //Checks whether the piece would promote on the incoming tile
+                Tile jumpTile = Grid.TileList[jumpPos];
+                bool isJumpTilePromoting; //Checks whether the piece would promote on the incoming tile
+
+                if (team == 0){
+                    isJumpTilePromoting = jumpTile.promoteWhite;
+                } else {
+                    isJumpTilePromoting = jumpTile.promoteBlack;
+                };
 
                 resultantMove = Move{currentPos, jumpPos, JumpTilePiece, isJumpTilePromoting, false, !piece.HasMoved};
                 moves.emplace_back(resultantMove);
@@ -218,8 +227,14 @@ std::vector<Move> ChessBoard::GeneratePseudoLegalMoves_NonCapture(Piece& piece){
                 uint8_t JumpTilePiece = (Grid.PieceGrid[jumpPos]); //If is a piece at a square is a 0, then no piece is there
                 bool isJumpTileEmpty = ! static_cast<bool>(JumpTilePiece);
 
-                TileType jumpTile = Grid.TileList[jumpPos].type;
-                bool isJumpTilePromoting = (jumpTile == TileType::JOINT_PROMOTION) || (jumpTile == static_cast<TileType>(team)); //Checks whether the piece would promote on the incoming tile
+                Tile jumpTile = Grid.TileList[jumpPos];
+                bool isJumpTilePromoting; //Checks whether the piece would promote on the incoming tile
+
+                if (team == 0){
+                    isJumpTilePromoting = jumpTile.promoteWhite;
+                } else {
+                    isJumpTilePromoting = jumpTile.promoteBlack;
+                };
 
                 if (isJumpTileEmpty){
 
@@ -304,7 +319,7 @@ std::vector<Move> ChessBoard::GeneratePseudoLegalMoves_NonCapture(Piece& piece){
 
 
 
-std::vector<Move> ChessBoard::GeneratePseudoLegalMoves_Capture(Piece& piece){
+std::vector<Move> ChessBoard::GeneratePseudoLegalMoves_Capture(const Piece& piece){
 
     MoveBehaviour attackBehaviour;
     if (piece.HasMoved){ 
@@ -338,8 +353,14 @@ std::vector<Move> ChessBoard::GeneratePseudoLegalMoves_Capture(Piece& piece){
 
             if (isJumpTileActive && isJumpTileOccupied && isJumpTilePieceDifferentColours){
 
-                TileType jumpTile = Grid.TileList[jumpPos].type;
-                bool isJumpTilePromoting = (jumpTile == TileType::JOINT_PROMOTION) || (jumpTile == static_cast<TileType>(team)); //Checks whether the piece would promote on the incoming tile
+                Tile jumpTile = Grid.TileList[jumpPos];
+                bool isJumpTilePromoting; //Checks whether the piece would promote on the incoming tile
+                
+                if (team == 0){
+                    isJumpTilePromoting = jumpTile.promoteWhite;
+                } else {
+                    isJumpTilePromoting = jumpTile.promoteBlack;
+                };
 
                 resultantMove = Move{currentPos, jumpPos, JumpTilePiece, isJumpTilePromoting, false, !piece.HasMoved};
                 moves.emplace_back(resultantMove);
@@ -380,8 +401,14 @@ std::vector<Move> ChessBoard::GeneratePseudoLegalMoves_Capture(Piece& piece){
                 uint8_t JumpTilePiece = (Grid.PieceGrid[jumpPos]); //If is a piece at a square is a 0, then no piece is there
                 bool isJumpTileOccupied = static_cast<bool>(JumpTilePiece);
 
-                TileType jumpTile = Grid.TileList[jumpPos].type;
-                bool isJumpTilePromoting = (jumpTile == TileType::JOINT_PROMOTION) || (jumpTile == static_cast<TileType>(team)); //Checks whether the piece would promote on the incoming tile
+                Tile jumpTile = Grid.TileList[jumpPos];
+                bool isJumpTilePromoting; //Checks whether the piece would promote on the incoming tile
+                
+                if (team == 0){
+                    isJumpTilePromoting = jumpTile.promoteWhite;
+                } else {
+                    isJumpTilePromoting = jumpTile.promoteBlack;
+                };
 
                 if (isJumpTileOccupied){
 
@@ -420,7 +447,7 @@ std::vector<Move> ChessBoard::GeneratePseudoLegalMoves_Capture(Piece& piece){
 
 
 
-std::vector<Move> ChessBoard::GenerateLegalMoves(Piece& piece){
+std::vector<Move> ChessBoard::GenerateLegalMoves(const Piece& piece){
     auto pseudomoves = GeneratePseudoLegalMoves_NonCapture(piece);
     auto pseudoattacks = GeneratePseudoLegalMoves_Capture(piece);
     std::vector<Move> legal_moves;

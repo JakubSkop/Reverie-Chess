@@ -3,7 +3,7 @@
 #include "Information.hpp"
 
 struct PieceInfo{
-    std::string_view name;
+    std::string name;
 };
 
 
@@ -14,7 +14,7 @@ struct Piece{
     PieceBehaviours Behaviour;
     PieceCategory Category;
     PieceInfo information;
-    bool Team;
+    bool Team; //black is true
     bool HasMoved;
     bool InCheck;
     bool Alive = true;
@@ -33,7 +33,7 @@ namespace Pieces{
     auto inline PawnFactory = [](sf::Vector2<int8_t> pos, bool team){return Piece{pos, PresetBehaviours::Pawn, PieceCategory::Pawn, PawnInfo, team, false, false };};
     constexpr PieceInfo BishopInfo = {"Basic_Bishop"};
     auto inline BishopFactory = [](sf::Vector2<int8_t> pos, bool team){return Piece{pos, PresetBehaviours::Bishop, PieceCategory::Bishop, BishopInfo, team, false, false };};
-    constexpr PieceInfo NullInfo = {""};
+    constexpr PieceInfo NullInfo = {"Null"};
     auto inline NullFactory = [](){return Piece{{0,0}, PresetBehaviours::Null, PieceCategory::Pawn, NullInfo, false, false, false };};
 
 };

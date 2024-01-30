@@ -22,9 +22,9 @@ class ChessBoard{
     uint8_t last_piece_pointer = 1; //Points to one past where the end of the piecelist is. While it is 256 long, no all of those will be used, so it essentially acts like a static_vector.
 
     public:
-        std::vector<Move> GeneratePseudoLegalMoves_NonCapture(Piece& piece); //Generate all pseudolegal moves for a piece at an index in the board
-        std::vector<Move> GeneratePseudoLegalMoves_Capture(Piece& piece); //Generate all pseudolegal captures for a piece at an index in the board
-        std::vector<Move> GenerateLegalMoves(Piece& piece);
+        std::vector<Move> GeneratePseudoLegalMoves_NonCapture(const Piece& piece); //Generate all pseudolegal moves for a piece at an index in the board
+        std::vector<Move> GeneratePseudoLegalMoves_Capture(const Piece& piece); //Generate all pseudolegal captures for a piece at an index in the board
+        std::vector<Move> GenerateLegalMoves(const Piece& piece);
         std::vector<Move> GenerateAllMoves();
         bool CheckLegality(Move move);
         void Play(Move move);
