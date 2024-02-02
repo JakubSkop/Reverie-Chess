@@ -26,13 +26,8 @@ std::shared_ptr<Screen> TeamSelectScreen(Resources resources, unsigned int level
     auto text_level = StaticImage(Text_Level);
 
     //Board
-    ChessBoard board = ChessBoard();
-    board.SetTileMap(PresetTileMaps::Diamond);
-    Piece pawn1 = Pieces::PawnFactory({5,5}, false);
-    Piece bish = Pieces::BishopFactory({6,6}, true);
-    board.AddPiece(pawn1);
-    board.AddPiece(bish);
-    UI::Element<BoardComponent> chess = GameBoardBuilder(board, {159,159}, resources).getObject();
+    ChessBoard board = Board_for_Level_N(levelNum);
+    UI::Element<BoardComponent> chess = GameBoardBuilder(board, {159,159}, resources, 0).getObject();
 
     
     home->Elements.push_back(std::make_shared<UI::Element<MemSprite>>(Splash));

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/Development/C++/SFML_GUI3/src/Chess/AI/AI.cpp" "CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.obj" "gcc" "CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.obj.d"
   "D:/Development/C++/SFML_GUI3/src/Chess/Board/Board.cpp" "CMakeFiles/MyTests.dir/src/Chess/Board/Board.cpp.obj" "gcc" "CMakeFiles/MyTests.dir/src/Chess/Board/Board.cpp.obj.d"
   "D:/Development/C++/SFML_GUI3/src/Chess/Move/Move.cpp" "CMakeFiles/MyTests.dir/src/Chess/Move/Move.cpp.obj" "gcc" "CMakeFiles/MyTests.dir/src/Chess/Move/Move.cpp.obj.d"
   "D:/Development/C++/SFML_GUI3/src/Chess/Piece/Pieces.cpp" "CMakeFiles/MyTests.dir/src/Chess/Piece/Pieces.cpp.obj" "gcc" "CMakeFiles/MyTests.dir/src/Chess/Piece/Pieces.cpp.obj.d"

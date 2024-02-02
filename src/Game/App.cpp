@@ -120,8 +120,20 @@ void Application::Setup(){
     SpriteHolder->AddSprite("White_Basic_Pawn", "PieceSpriteSheet", {{0,32},{32,32}}, 1.5f);
     SpriteHolder->AddSprite("Black_Basic_Pawn", "PieceSpriteSheet", {{0,64},{32,32}}, 1.5f);
 
+    SpriteHolder->AddSprite("White_Basic_Knight", "PieceSpriteSheet", {{0,96},{32,32}}, 1.5f);
+    SpriteHolder->AddSprite("Black_Basic_Knight", "PieceSpriteSheet", {{0,128},{32,32}}, 1.5f);
+
     SpriteHolder->AddSprite("White_Basic_Bishop", "PieceSpriteSheet", {{0,160},{32,32}}, 1.5f);
     SpriteHolder->AddSprite("Black_Basic_Bishop", "PieceSpriteSheet", {{0,192},{32,32}}, 1.5f);
+
+    SpriteHolder->AddSprite("White_Basic_Rook", "PieceSpriteSheet", {{0,224},{32,32}}, 1.5f);
+    SpriteHolder->AddSprite("Black_Basic_Rook", "PieceSpriteSheet", {{0,256},{32,32}}, 1.5f);
+
+    SpriteHolder->AddSprite("White_Basic_Queen", "PieceSpriteSheet", {{0,288},{32,32}}, 1.5f);
+    SpriteHolder->AddSprite("Black_Basic_Queen", "PieceSpriteSheet", {{0,320},{32,32}}, 1.5f);
+
+    SpriteHolder->AddSprite("White_Basic_King", "PieceSpriteSheet", {{0,352},{32,32}}, 1.5f);
+    SpriteHolder->AddSprite("Black_Basic_King", "PieceSpriteSheet", {{0,384},{32,32}}, 1.5f);
 
     std::shared_ptr<Screen> home = HomeScreen(resources);
     std::shared_ptr<Screen> home2 = HomeScreen2(resources);

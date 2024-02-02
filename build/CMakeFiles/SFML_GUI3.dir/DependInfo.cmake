@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Development/C++/SFML_GUI3/main.cpp" "CMakeFiles/SFML_GUI3.dir/main.cpp.obj" "gcc" "CMakeFiles/SFML_GUI3.dir/main.cpp.obj.d"
+  "D:/Development/C++/SFML_GUI3/src/Chess/AI/AI.cpp" "CMakeFiles/SFML_GUI3.dir/src/Chess/AI/AI.cpp.obj" "gcc" "CMakeFiles/SFML_GUI3.dir/src/Chess/AI/AI.cpp.obj.d"
   "D:/Development/C++/SFML_GUI3/src/Chess/Board/Board.cpp" "CMakeFiles/SFML_GUI3.dir/src/Chess/Board/Board.cpp.obj" "gcc" "CMakeFiles/SFML_GUI3.dir/src/Chess/Board/Board.cpp.obj.d"
   "D:/Development/C++/SFML_GUI3/src/Chess/Move/Move.cpp" "CMakeFiles/SFML_GUI3.dir/src/Chess/Move/Move.cpp.obj" "gcc" "CMakeFiles/SFML_GUI3.dir/src/Chess/Move/Move.cpp.obj.d"
   "D:/Development/C++/SFML_GUI3/src/Chess/Piece/Pieces.cpp" "CMakeFiles/SFML_GUI3.dir/src/Chess/Piece/Pieces.cpp.obj" "gcc" "CMakeFiles/SFML_GUI3.dir/src/Chess/Piece/Pieces.cpp.obj.d"

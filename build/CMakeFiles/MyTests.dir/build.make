@@ -83,11 +83,26 @@ CMakeFiles/MyTests.dir/tests/MainTesting.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyTests.dir/tests/MainTesting.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Development\C++\SFML_GUI3\tests\MainTesting.cpp -o CMakeFiles\MyTests.dir\tests\MainTesting.cpp.s
 
+CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.obj: CMakeFiles/MyTests.dir/flags.make
+CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
+CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.obj: D:/Development/C++/SFML_GUI3/src/Chess/AI/AI.cpp
+CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.obj -MF CMakeFiles\MyTests.dir\src\Chess\AI\AI.cpp.obj.d -o CMakeFiles\MyTests.dir\src\Chess\AI\AI.cpp.obj -c D:\Development\C++\SFML_GUI3\src\Chess\AI\AI.cpp
+
+CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Development\C++\SFML_GUI3\src\Chess\AI\AI.cpp > CMakeFiles\MyTests.dir\src\Chess\AI\AI.cpp.i
+
+CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Development\C++\SFML_GUI3\src\Chess\AI\AI.cpp -o CMakeFiles\MyTests.dir\src\Chess\AI\AI.cpp.s
+
 CMakeFiles/MyTests.dir/src/Chess/Board/Board.cpp.obj: CMakeFiles/MyTests.dir/flags.make
 CMakeFiles/MyTests.dir/src/Chess/Board/Board.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/Chess/Board/Board.cpp.obj: D:/Development/C++/SFML_GUI3/src/Chess/Board/Board.cpp
 CMakeFiles/MyTests.dir/src/Chess/Board/Board.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyTests.dir/src/Chess/Board/Board.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyTests.dir/src/Chess/Board/Board.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/Chess/Board/Board.cpp.obj -MF CMakeFiles\MyTests.dir\src\Chess\Board\Board.cpp.obj.d -o CMakeFiles\MyTests.dir\src\Chess\Board\Board.cpp.obj -c D:\Development\C++\SFML_GUI3\src\Chess\Board\Board.cpp
 
 CMakeFiles/MyTests.dir/src/Chess/Board/Board.cpp.i: cmake_force
@@ -102,7 +117,7 @@ CMakeFiles/MyTests.dir/src/Chess/Move/Move.cpp.obj: CMakeFiles/MyTests.dir/flags
 CMakeFiles/MyTests.dir/src/Chess/Move/Move.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/Chess/Move/Move.cpp.obj: D:/Development/C++/SFML_GUI3/src/Chess/Move/Move.cpp
 CMakeFiles/MyTests.dir/src/Chess/Move/Move.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyTests.dir/src/Chess/Move/Move.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyTests.dir/src/Chess/Move/Move.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/Chess/Move/Move.cpp.obj -MF CMakeFiles\MyTests.dir\src\Chess\Move\Move.cpp.obj.d -o CMakeFiles\MyTests.dir\src\Chess\Move\Move.cpp.obj -c D:\Development\C++\SFML_GUI3\src\Chess\Move\Move.cpp
 
 CMakeFiles/MyTests.dir/src/Chess/Move/Move.cpp.i: cmake_force
@@ -117,7 +132,7 @@ CMakeFiles/MyTests.dir/src/Chess/Piece/Pieces.cpp.obj: CMakeFiles/MyTests.dir/fl
 CMakeFiles/MyTests.dir/src/Chess/Piece/Pieces.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/Chess/Piece/Pieces.cpp.obj: D:/Development/C++/SFML_GUI3/src/Chess/Piece/Pieces.cpp
 CMakeFiles/MyTests.dir/src/Chess/Piece/Pieces.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyTests.dir/src/Chess/Piece/Pieces.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyTests.dir/src/Chess/Piece/Pieces.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/Chess/Piece/Pieces.cpp.obj -MF CMakeFiles\MyTests.dir\src\Chess\Piece\Pieces.cpp.obj.d -o CMakeFiles\MyTests.dir\src\Chess\Piece\Pieces.cpp.obj -c D:\Development\C++\SFML_GUI3\src\Chess\Piece\Pieces.cpp
 
 CMakeFiles/MyTests.dir/src/Chess/Piece/Pieces.cpp.i: cmake_force
@@ -132,7 +147,7 @@ CMakeFiles/MyTests.dir/src/Game/App.cpp.obj: CMakeFiles/MyTests.dir/flags.make
 CMakeFiles/MyTests.dir/src/Game/App.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/Game/App.cpp.obj: D:/Development/C++/SFML_GUI3/src/Game/App.cpp
 CMakeFiles/MyTests.dir/src/Game/App.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyTests.dir/src/Game/App.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyTests.dir/src/Game/App.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/Game/App.cpp.obj -MF CMakeFiles\MyTests.dir\src\Game\App.cpp.obj.d -o CMakeFiles\MyTests.dir\src\Game\App.cpp.obj -c D:\Development\C++\SFML_GUI3\src\Game\App.cpp
 
 CMakeFiles/MyTests.dir/src/Game/App.cpp.i: cmake_force
@@ -147,7 +162,7 @@ CMakeFiles/MyTests.dir/src/Game/MessageQueues.cpp.obj: CMakeFiles/MyTests.dir/fl
 CMakeFiles/MyTests.dir/src/Game/MessageQueues.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/Game/MessageQueues.cpp.obj: D:/Development/C++/SFML_GUI3/src/Game/MessageQueues.cpp
 CMakeFiles/MyTests.dir/src/Game/MessageQueues.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyTests.dir/src/Game/MessageQueues.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyTests.dir/src/Game/MessageQueues.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/Game/MessageQueues.cpp.obj -MF CMakeFiles\MyTests.dir\src\Game\MessageQueues.cpp.obj.d -o CMakeFiles\MyTests.dir\src\Game\MessageQueues.cpp.obj -c D:\Development\C++\SFML_GUI3\src\Game\MessageQueues.cpp
 
 CMakeFiles/MyTests.dir/src/Game/MessageQueues.cpp.i: cmake_force
@@ -162,7 +177,7 @@ CMakeFiles/MyTests.dir/src/General/Utilities.cpp.obj: CMakeFiles/MyTests.dir/fla
 CMakeFiles/MyTests.dir/src/General/Utilities.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/General/Utilities.cpp.obj: D:/Development/C++/SFML_GUI3/src/General/Utilities.cpp
 CMakeFiles/MyTests.dir/src/General/Utilities.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyTests.dir/src/General/Utilities.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyTests.dir/src/General/Utilities.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/General/Utilities.cpp.obj -MF CMakeFiles\MyTests.dir\src\General\Utilities.cpp.obj.d -o CMakeFiles\MyTests.dir\src\General\Utilities.cpp.obj -c D:\Development\C++\SFML_GUI3\src\General\Utilities.cpp
 
 CMakeFiles/MyTests.dir/src/General/Utilities.cpp.i: cmake_force
@@ -177,7 +192,7 @@ CMakeFiles/MyTests.dir/src/Resources/EventList.cpp.obj: CMakeFiles/MyTests.dir/f
 CMakeFiles/MyTests.dir/src/Resources/EventList.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/Resources/EventList.cpp.obj: D:/Development/C++/SFML_GUI3/src/Resources/EventList.cpp
 CMakeFiles/MyTests.dir/src/Resources/EventList.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyTests.dir/src/Resources/EventList.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MyTests.dir/src/Resources/EventList.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/Resources/EventList.cpp.obj -MF CMakeFiles\MyTests.dir\src\Resources\EventList.cpp.obj.d -o CMakeFiles\MyTests.dir\src\Resources\EventList.cpp.obj -c D:\Development\C++\SFML_GUI3\src\Resources\EventList.cpp
 
 CMakeFiles/MyTests.dir/src/Resources/EventList.cpp.i: cmake_force
@@ -192,7 +207,7 @@ CMakeFiles/MyTests.dir/src/Resources/ScreenConductor.cpp.obj: CMakeFiles/MyTests
 CMakeFiles/MyTests.dir/src/Resources/ScreenConductor.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/Resources/ScreenConductor.cpp.obj: D:/Development/C++/SFML_GUI3/src/Resources/ScreenConductor.cpp
 CMakeFiles/MyTests.dir/src/Resources/ScreenConductor.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MyTests.dir/src/Resources/ScreenConductor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MyTests.dir/src/Resources/ScreenConductor.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/Resources/ScreenConductor.cpp.obj -MF CMakeFiles\MyTests.dir\src\Resources\ScreenConductor.cpp.obj.d -o CMakeFiles\MyTests.dir\src\Resources\ScreenConductor.cpp.obj -c D:\Development\C++\SFML_GUI3\src\Resources\ScreenConductor.cpp
 
 CMakeFiles/MyTests.dir/src/Resources/ScreenConductor.cpp.i: cmake_force
@@ -207,7 +222,7 @@ CMakeFiles/MyTests.dir/src/Resources/SoundPlayer.cpp.obj: CMakeFiles/MyTests.dir
 CMakeFiles/MyTests.dir/src/Resources/SoundPlayer.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/Resources/SoundPlayer.cpp.obj: D:/Development/C++/SFML_GUI3/src/Resources/SoundPlayer.cpp
 CMakeFiles/MyTests.dir/src/Resources/SoundPlayer.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MyTests.dir/src/Resources/SoundPlayer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MyTests.dir/src/Resources/SoundPlayer.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/Resources/SoundPlayer.cpp.obj -MF CMakeFiles\MyTests.dir\src\Resources\SoundPlayer.cpp.obj.d -o CMakeFiles\MyTests.dir\src\Resources\SoundPlayer.cpp.obj -c D:\Development\C++\SFML_GUI3\src\Resources\SoundPlayer.cpp
 
 CMakeFiles/MyTests.dir/src/Resources/SoundPlayer.cpp.i: cmake_force
@@ -222,7 +237,7 @@ CMakeFiles/MyTests.dir/src/Resources/SpriteManager.cpp.obj: CMakeFiles/MyTests.d
 CMakeFiles/MyTests.dir/src/Resources/SpriteManager.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/Resources/SpriteManager.cpp.obj: D:/Development/C++/SFML_GUI3/src/Resources/SpriteManager.cpp
 CMakeFiles/MyTests.dir/src/Resources/SpriteManager.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MyTests.dir/src/Resources/SpriteManager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MyTests.dir/src/Resources/SpriteManager.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/Resources/SpriteManager.cpp.obj -MF CMakeFiles\MyTests.dir\src\Resources\SpriteManager.cpp.obj.d -o CMakeFiles\MyTests.dir\src\Resources\SpriteManager.cpp.obj -c D:\Development\C++\SFML_GUI3\src\Resources\SpriteManager.cpp
 
 CMakeFiles/MyTests.dir/src/Resources/SpriteManager.cpp.i: cmake_force
@@ -237,7 +252,7 @@ CMakeFiles/MyTests.dir/src/UI/CustomElement/Gameboard/BoardElement.cpp.obj: CMak
 CMakeFiles/MyTests.dir/src/UI/CustomElement/Gameboard/BoardElement.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/UI/CustomElement/Gameboard/BoardElement.cpp.obj: D:/Development/C++/SFML_GUI3/src/UI/CustomElement/Gameboard/BoardElement.cpp
 CMakeFiles/MyTests.dir/src/UI/CustomElement/Gameboard/BoardElement.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MyTests.dir/src/UI/CustomElement/Gameboard/BoardElement.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MyTests.dir/src/UI/CustomElement/Gameboard/BoardElement.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/UI/CustomElement/Gameboard/BoardElement.cpp.obj -MF CMakeFiles\MyTests.dir\src\UI\CustomElement\Gameboard\BoardElement.cpp.obj.d -o CMakeFiles\MyTests.dir\src\UI\CustomElement\Gameboard\BoardElement.cpp.obj -c D:\Development\C++\SFML_GUI3\src\UI\CustomElement\Gameboard\BoardElement.cpp
 
 CMakeFiles/MyTests.dir/src/UI/CustomElement/Gameboard/BoardElement.cpp.i: cmake_force
@@ -252,7 +267,7 @@ CMakeFiles/MyTests.dir/src/UI/CustomElement/ScrollablePage/ScrollingPageElement.
 CMakeFiles/MyTests.dir/src/UI/CustomElement/ScrollablePage/ScrollingPageElement.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/UI/CustomElement/ScrollablePage/ScrollingPageElement.cpp.obj: D:/Development/C++/SFML_GUI3/src/UI/CustomElement/ScrollablePage/ScrollingPageElement.cpp
 CMakeFiles/MyTests.dir/src/UI/CustomElement/ScrollablePage/ScrollingPageElement.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MyTests.dir/src/UI/CustomElement/ScrollablePage/ScrollingPageElement.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MyTests.dir/src/UI/CustomElement/ScrollablePage/ScrollingPageElement.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/UI/CustomElement/ScrollablePage/ScrollingPageElement.cpp.obj -MF CMakeFiles\MyTests.dir\src\UI\CustomElement\ScrollablePage\ScrollingPageElement.cpp.obj.d -o CMakeFiles\MyTests.dir\src\UI\CustomElement\ScrollablePage\ScrollingPageElement.cpp.obj -c D:\Development\C++\SFML_GUI3\src\UI\CustomElement\ScrollablePage\ScrollingPageElement.cpp
 
 CMakeFiles/MyTests.dir/src/UI/CustomElement/ScrollablePage/ScrollingPageElement.cpp.i: cmake_force
@@ -267,7 +282,7 @@ CMakeFiles/MyTests.dir/src/UI/CustomElement/Slider/SliderElement.cpp.obj: CMakeF
 CMakeFiles/MyTests.dir/src/UI/CustomElement/Slider/SliderElement.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/UI/CustomElement/Slider/SliderElement.cpp.obj: D:/Development/C++/SFML_GUI3/src/UI/CustomElement/Slider/SliderElement.cpp
 CMakeFiles/MyTests.dir/src/UI/CustomElement/Slider/SliderElement.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MyTests.dir/src/UI/CustomElement/Slider/SliderElement.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MyTests.dir/src/UI/CustomElement/Slider/SliderElement.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/UI/CustomElement/Slider/SliderElement.cpp.obj -MF CMakeFiles\MyTests.dir\src\UI\CustomElement\Slider\SliderElement.cpp.obj.d -o CMakeFiles\MyTests.dir\src\UI\CustomElement\Slider\SliderElement.cpp.obj -c D:\Development\C++\SFML_GUI3\src\UI\CustomElement\Slider\SliderElement.cpp
 
 CMakeFiles/MyTests.dir/src/UI/CustomElement/Slider/SliderElement.cpp.i: cmake_force
@@ -282,7 +297,7 @@ CMakeFiles/MyTests.dir/src/UI/CustomSprite/MemSprite.cpp.obj: CMakeFiles/MyTests
 CMakeFiles/MyTests.dir/src/UI/CustomSprite/MemSprite.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/UI/CustomSprite/MemSprite.cpp.obj: D:/Development/C++/SFML_GUI3/src/UI/CustomSprite/MemSprite.cpp
 CMakeFiles/MyTests.dir/src/UI/CustomSprite/MemSprite.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MyTests.dir/src/UI/CustomSprite/MemSprite.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/MyTests.dir/src/UI/CustomSprite/MemSprite.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/UI/CustomSprite/MemSprite.cpp.obj -MF CMakeFiles\MyTests.dir\src\UI\CustomSprite\MemSprite.cpp.obj.d -o CMakeFiles\MyTests.dir\src\UI\CustomSprite\MemSprite.cpp.obj -c D:\Development\C++\SFML_GUI3\src\UI\CustomSprite\MemSprite.cpp
 
 CMakeFiles/MyTests.dir/src/UI/CustomSprite/MemSprite.cpp.i: cmake_force
@@ -297,7 +312,7 @@ CMakeFiles/MyTests.dir/src/UI/Element.cpp.obj: CMakeFiles/MyTests.dir/flags.make
 CMakeFiles/MyTests.dir/src/UI/Element.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/UI/Element.cpp.obj: D:/Development/C++/SFML_GUI3/src/UI/Element.cpp
 CMakeFiles/MyTests.dir/src/UI/Element.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/MyTests.dir/src/UI/Element.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/MyTests.dir/src/UI/Element.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/UI/Element.cpp.obj -MF CMakeFiles\MyTests.dir\src\UI\Element.cpp.obj.d -o CMakeFiles\MyTests.dir\src\UI\Element.cpp.obj -c D:\Development\C++\SFML_GUI3\src\UI\Element.cpp
 
 CMakeFiles/MyTests.dir/src/UI/Element.cpp.i: cmake_force
@@ -312,7 +327,7 @@ CMakeFiles/MyTests.dir/src/UI/ElementBuilders.cpp.obj: CMakeFiles/MyTests.dir/fl
 CMakeFiles/MyTests.dir/src/UI/ElementBuilders.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/UI/ElementBuilders.cpp.obj: D:/Development/C++/SFML_GUI3/src/UI/ElementBuilders.cpp
 CMakeFiles/MyTests.dir/src/UI/ElementBuilders.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/MyTests.dir/src/UI/ElementBuilders.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MyTests.dir/src/UI/ElementBuilders.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/UI/ElementBuilders.cpp.obj -MF CMakeFiles\MyTests.dir\src\UI\ElementBuilders.cpp.obj.d -o CMakeFiles\MyTests.dir\src\UI\ElementBuilders.cpp.obj -c D:\Development\C++\SFML_GUI3\src\UI\ElementBuilders.cpp
 
 CMakeFiles/MyTests.dir/src/UI/ElementBuilders.cpp.i: cmake_force
@@ -327,7 +342,7 @@ CMakeFiles/MyTests.dir/src/UI/Screen.cpp.obj: CMakeFiles/MyTests.dir/flags.make
 CMakeFiles/MyTests.dir/src/UI/Screen.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/UI/Screen.cpp.obj: D:/Development/C++/SFML_GUI3/src/UI/Screen.cpp
 CMakeFiles/MyTests.dir/src/UI/Screen.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MyTests.dir/src/UI/Screen.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/MyTests.dir/src/UI/Screen.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/UI/Screen.cpp.obj -MF CMakeFiles\MyTests.dir\src\UI\Screen.cpp.obj.d -o CMakeFiles\MyTests.dir\src\UI\Screen.cpp.obj -c D:\Development\C++\SFML_GUI3\src\UI\Screen.cpp
 
 CMakeFiles/MyTests.dir/src/UI/Screen.cpp.i: cmake_force
@@ -342,7 +357,7 @@ CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen.cpp.obj: CMakeFiles/MyTests.dir
 CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen.cpp.obj: D:/Development/C++/SFML_GUI3/src/UI/Screens/HomeScreen.cpp
 CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen.cpp.obj -MF CMakeFiles\MyTests.dir\src\UI\Screens\HomeScreen.cpp.obj.d -o CMakeFiles\MyTests.dir\src\UI\Screens\HomeScreen.cpp.obj -c D:\Development\C++\SFML_GUI3\src\UI\Screens\HomeScreen.cpp
 
 CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen.cpp.i: cmake_force
@@ -357,7 +372,7 @@ CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen2.cpp.obj: CMakeFiles/MyTests.di
 CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen2.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen2.cpp.obj: D:/Development/C++/SFML_GUI3/src/UI/Screens/HomeScreen2.cpp
 CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen2.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen2.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen2.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen2.cpp.obj -MF CMakeFiles\MyTests.dir\src\UI\Screens\HomeScreen2.cpp.obj.d -o CMakeFiles\MyTests.dir\src\UI\Screens\HomeScreen2.cpp.obj -c D:\Development\C++\SFML_GUI3\src\UI\Screens\HomeScreen2.cpp
 
 CMakeFiles/MyTests.dir/src/UI/Screens/HomeScreen2.cpp.i: cmake_force
@@ -372,7 +387,7 @@ CMakeFiles/MyTests.dir/src/UI/Screens/LevelScreen.cpp.obj: CMakeFiles/MyTests.di
 CMakeFiles/MyTests.dir/src/UI/Screens/LevelScreen.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/UI/Screens/LevelScreen.cpp.obj: D:/Development/C++/SFML_GUI3/src/UI/Screens/LevelScreen.cpp
 CMakeFiles/MyTests.dir/src/UI/Screens/LevelScreen.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/MyTests.dir/src/UI/Screens/LevelScreen.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/MyTests.dir/src/UI/Screens/LevelScreen.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/UI/Screens/LevelScreen.cpp.obj -MF CMakeFiles\MyTests.dir\src\UI\Screens\LevelScreen.cpp.obj.d -o CMakeFiles\MyTests.dir\src\UI\Screens\LevelScreen.cpp.obj -c D:\Development\C++\SFML_GUI3\src\UI\Screens\LevelScreen.cpp
 
 CMakeFiles/MyTests.dir/src/UI/Screens/LevelScreen.cpp.i: cmake_force
@@ -387,7 +402,7 @@ CMakeFiles/MyTests.dir/src/UI/Screens/SettingsScreen.cpp.obj: CMakeFiles/MyTests
 CMakeFiles/MyTests.dir/src/UI/Screens/SettingsScreen.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/UI/Screens/SettingsScreen.cpp.obj: D:/Development/C++/SFML_GUI3/src/UI/Screens/SettingsScreen.cpp
 CMakeFiles/MyTests.dir/src/UI/Screens/SettingsScreen.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/MyTests.dir/src/UI/Screens/SettingsScreen.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/MyTests.dir/src/UI/Screens/SettingsScreen.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/UI/Screens/SettingsScreen.cpp.obj -MF CMakeFiles\MyTests.dir\src\UI\Screens\SettingsScreen.cpp.obj.d -o CMakeFiles\MyTests.dir\src\UI\Screens\SettingsScreen.cpp.obj -c D:\Development\C++\SFML_GUI3\src\UI\Screens\SettingsScreen.cpp
 
 CMakeFiles/MyTests.dir/src/UI/Screens/SettingsScreen.cpp.i: cmake_force
@@ -402,7 +417,7 @@ CMakeFiles/MyTests.dir/src/UI/Screens/TeamSelectScreen.cpp.obj: CMakeFiles/MyTes
 CMakeFiles/MyTests.dir/src/UI/Screens/TeamSelectScreen.cpp.obj: CMakeFiles/MyTests.dir/includes_CXX.rsp
 CMakeFiles/MyTests.dir/src/UI/Screens/TeamSelectScreen.cpp.obj: D:/Development/C++/SFML_GUI3/src/UI/Screens/TeamSelectScreen.cpp
 CMakeFiles/MyTests.dir/src/UI/Screens/TeamSelectScreen.cpp.obj: CMakeFiles/MyTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/MyTests.dir/src/UI/Screens/TeamSelectScreen.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/MyTests.dir/src/UI/Screens/TeamSelectScreen.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/src/UI/Screens/TeamSelectScreen.cpp.obj -MF CMakeFiles\MyTests.dir\src\UI\Screens\TeamSelectScreen.cpp.obj.d -o CMakeFiles\MyTests.dir\src\UI\Screens\TeamSelectScreen.cpp.obj -c D:\Development\C++\SFML_GUI3\src\UI\Screens\TeamSelectScreen.cpp
 
 CMakeFiles/MyTests.dir/src/UI/Screens/TeamSelectScreen.cpp.i: cmake_force
@@ -416,6 +431,7 @@ CMakeFiles/MyTests.dir/src/UI/Screens/TeamSelectScreen.cpp.s: cmake_force
 # Object files for target MyTests
 MyTests_OBJECTS = \
 "CMakeFiles/MyTests.dir/tests/MainTesting.cpp.obj" \
+"CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.obj" \
 "CMakeFiles/MyTests.dir/src/Chess/Board/Board.cpp.obj" \
 "CMakeFiles/MyTests.dir/src/Chess/Move/Move.cpp.obj" \
 "CMakeFiles/MyTests.dir/src/Chess/Piece/Pieces.cpp.obj" \
@@ -443,6 +459,7 @@ MyTests_OBJECTS = \
 MyTests_EXTERNAL_OBJECTS =
 
 MyTests.exe: CMakeFiles/MyTests.dir/tests/MainTesting.cpp.obj
+MyTests.exe: CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.obj
 MyTests.exe: CMakeFiles/MyTests.dir/src/Chess/Board/Board.cpp.obj
 MyTests.exe: CMakeFiles/MyTests.dir/src/Chess/Move/Move.cpp.obj
 MyTests.exe: CMakeFiles/MyTests.dir/src/Chess/Piece/Pieces.cpp.obj
@@ -483,7 +500,7 @@ MyTests.exe: D:/Development/C++/SFML_GUI3/SFML/lib/libfreetype.a
 MyTests.exe: CMakeFiles/MyTests.dir/linkLibs.rsp
 MyTests.exe: CMakeFiles/MyTests.dir/objects1
 MyTests.exe: CMakeFiles/MyTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable MyTests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Development\C++\SFML_GUI3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable MyTests.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MyTests.dir\link.txt --verbose=$(VERBOSE)
 	D:\BiggerApplications\CMake\bin\cmake.exe -D TEST_TARGET=MyTests -D TEST_EXECUTABLE=D:/Development/C++/SFML_GUI3/build/MyTests.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=D:/Development/C++/SFML_GUI3/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=MyTests_TESTS -D CTEST_FILE=D:/Development/C++/SFML_GUI3/build/MyTests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P D:/BiggerApplications/CMake/share/cmake-3.25/Modules/GoogleTestAddTests.cmake
 

@@ -104,7 +104,7 @@ void GameBoardBuilder::RefreshPieces(Element<BoardComponent>& gameboard1, sf::Ve
 
 
 
-GameBoardBuilder::GameBoardBuilder(ChessBoard board, sf::Vector2f position, Resources resources){
+GameBoardBuilder::GameBoardBuilder(ChessBoard board, sf::Vector2f position, Resources resources, bool startingTeam){
 
     auto TileDimensions = resources.spriteManager->AccessSprite("RegularTile1").getGlobalBounds().getSize();
     auto boardSize = sf::Vector2f(float(Constants::MAX_BOARD_DIMENSIONS.x), float(Constants::MAX_BOARD_DIMENSIONS.y));
@@ -114,8 +114,14 @@ GameBoardBuilder::GameBoardBuilder(ChessBoard board, sf::Vector2f position, Reso
     //Set up Tiles
     gameboard.DrawableComponent.Board = board;
     gameboard.DrawableComponent.CurrentPieceOverlay = resources.spriteManager->AccessSprite("CurrentTileOverlay");
+    gameboard.DrawableComponent.currentTeam = startingTeam;
     RefreshTiles(position, resources);
     RefreshPieces(gameboard,position, resources);
+    gameboard.DrawableComponent.Winner = sf::Text(" ", resources.settings->fonts->PrimaryFont, 150);
+    gameboard.DrawableComponent.Winner.setPosition(20.0_perW, 60.0_perH);
+    gameboard.DrawableComponent.Winner.setRotation(-20.0);
+    gameboard.DrawableComponent.Winner.setOutlineThickness(3);
+    gameboard.DrawableComponent.Winner.setOutlineColor(Constants::Palette::Black);
 
     auto drawFunction = [](Element<BoardComponent>* element, Resources appResources){
         for (auto sprite : element->DrawableComponent.Tiles){
@@ -131,11 +137,17 @@ GameBoardBuilder::GameBoardBuilder(ChessBoard board, sf::Vector2f position, Reso
             appResources.globalTexture->draw(sprite); 
         };
 
+        appResources.globalTexture->draw(element->DrawableComponent.Winner);
         appResources.globalTexture->draw(element->DrawableComponent.CurrentPieceOverlay);
     };
 
     StatePtr Standardstate = std::make_shared<State<Element<BoardComponent>>>();
     StatePtr Clickedstate = std::make_shared<State<Element<BoardComponent>>>();
+    StatePtr Wonstate = std::make_shared<State<Element<BoardComponent>>>();
+
+    Wonstate->UpdateCallback = [](Element<BoardComponent>* element, Resources appResources){
+        return std::nullopt;
+    };
 
     Standardstate->UpdateCallback = [Clickedstate, boardRect, TileDimensions, position](Element<BoardComponent>* element, Resources appResources) -> PotentialStatePtr{
 
@@ -155,13 +167,13 @@ GameBoardBuilder::GameBoardBuilder(ChessBoard board, sf::Vector2f position, Reso
 
     };
 
-    Clickedstate->UpdateCallback = [Standardstate, TileDimensions, position, this](Element<BoardComponent>* element, Resources appResources) -> PotentialStatePtr{
+    Clickedstate->UpdateCallback = [Standardstate, Wonstate, TileDimensions, position, this](Element<BoardComponent>* element, Resources appResources) -> PotentialStatePtr{
 
         auto mousePos = sf::Vector2f(sf::Mouse::getPosition(*appResources.window));
         auto mousePosRelative = mousePos - position;
         int i = int(mousePosRelative.x/TileDimensions.x);
         int j = int(mousePosRelative.y/TileDimensions.y);
-        sf::Vector2i loc = element->DrawableComponent.CurrentLocation;
+        sf::Vector2i& loc = element->DrawableComponent.CurrentLocation;
 
         auto event = appResources.eventList->MouseButtons.at("Left");
 
@@ -174,7 +186,16 @@ GameBoardBuilder::GameBoardBuilder(ChessBoard board, sf::Vector2f position, Reso
             if (index != element->DrawableComponent.currentMoves.end()){
 
                 element->DrawableComponent.Board.Play(*index);
+                std::cout << *index << "\n";
+                element->DrawableComponent.currentTeam = !element->DrawableComponent.currentTeam;
                 RefreshPieces(*element, position, appResources);
+
+                bool hasGameEnded = element->DrawableComponent.Board.GenerateAllMoves(element->DrawableComponent.currentTeam).empty();
+
+                if (hasGameEnded){
+                    return std::optional(Wonstate);
+                }
+
             } 
 
             return std::optional(Standardstate);
@@ -184,13 +205,13 @@ GameBoardBuilder::GameBoardBuilder(ChessBoard board, sf::Vector2f position, Reso
             return std::nullopt;
         };
 
-        return std::nullopt;
-
     };
 
 
 
-
+    Wonstate->EnterCallback = [](Element<BoardComponent>* element){element->DrawableComponent.Winner.setString(std::string(element->DrawableComponent.currentTeam ? "White" : "Black") + " Won");};
+    Wonstate->ExitCallback = [](Element<BoardComponent>* element){};
+    Wonstate->DrawCallback = drawFunction;
 
     Standardstate->EnterCallback = [](Element<BoardComponent>* element){};
     Standardstate->ExitCallback = [](Element<BoardComponent>* element){};
@@ -199,7 +220,7 @@ GameBoardBuilder::GameBoardBuilder(ChessBoard board, sf::Vector2f position, Reso
     Clickedstate->EnterCallback = [resources, position, TileDimensions](Element<BoardComponent>* element){
 
         //Draw the overlay for the grid square you selected
-        sf::Vector2i loc = element->DrawableComponent.CurrentLocation;
+        sf::Vector2i& loc = element->DrawableComponent.CurrentLocation;
         sf::Vector2f tilePos = position + sf::Vector2f{loc.x*TileDimensions.x, loc.y*TileDimensions.y};
         element->DrawableComponent.CurrentPieceOverlay.setPosition(tilePos);
 
@@ -207,19 +228,25 @@ GameBoardBuilder::GameBoardBuilder(ChessBoard board, sf::Vector2f position, Reso
         if(loc.x < 16 && loc.y < 16){
 
             int indexFrom = 240 - loc.y*16 + loc.x;
-            const Piece& p = element->DrawableComponent.Board.GetPieces()[element->DrawableComponent.Board.GetGrid().PieceGrid[indexFrom]];
 
-            auto Moves = element->DrawableComponent.Board.GenerateLegalMoves(p);
+            uint8_t pieceIndex = element->DrawableComponent.Board.GetGrid().PieceGrid[indexFrom];
+            const Piece& p = element->DrawableComponent.Board.GetPieces()[pieceIndex];
 
-            for (auto move : Moves){
-                MemSprite moveSprite = resources.spriteManager->AccessSprite("MoveOverlay");
-                auto moveVector = IndexToVec(move.to);
-                moveVector.y = 15-moveVector.y;
-                moveSprite.setPosition(position + sf::Vector2f{moveVector.x*TileDimensions.x, moveVector.y*TileDimensions.y});
-                element->DrawableComponent.PossibleMoves[move.to] = moveSprite;
+            if (p.Team == element->DrawableComponent.currentTeam){
+
+                auto Moves = element->DrawableComponent.Board.GenerateLegalMoves(p);
+
+                for (auto move : Moves){
+                    MemSprite moveSprite = resources.spriteManager->AccessSprite("MoveOverlay");
+                    auto moveVector = IndexToVec(move.to);
+                    moveVector.y = 15-moveVector.y;
+                    moveSprite.setPosition(position + sf::Vector2f{moveVector.x*TileDimensions.x, moveVector.y*TileDimensions.y});
+                    element->DrawableComponent.PossibleMoves[move.to] = moveSprite;
+                }
+
+                element->DrawableComponent.currentMoves = Moves;
+
             }
-
-            element->DrawableComponent.currentMoves = Moves;
 
         }
     };
@@ -229,6 +256,7 @@ GameBoardBuilder::GameBoardBuilder(ChessBoard board, sf::Vector2f position, Reso
         for (auto& moveS : element->DrawableComponent.PossibleMoves){
             moveS = nullS;
         }
+        element->DrawableComponent.currentMoves.clear();
     };
     Clickedstate->DrawCallback = drawFunction;
 

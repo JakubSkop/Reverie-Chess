@@ -17,7 +17,7 @@ class GameBoardBuilder{
     Element<BoardComponent> gameboard;
 
     public:
-        GameBoardBuilder(ChessBoard board, sf::Vector2f position, Resources resources);
+        GameBoardBuilder(ChessBoard board, sf::Vector2f position, Resources resources, bool startingTeam);
         Element<BoardComponent> getObject();
         void RefreshTiles(sf::Vector2f position, Resources resources);
         void RefreshPieces(Element<BoardComponent>& gameboard1, sf::Vector2f position, Resources resources);

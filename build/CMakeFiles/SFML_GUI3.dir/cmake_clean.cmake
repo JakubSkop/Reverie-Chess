@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SFML_GUI3.dir/main.cpp.obj"
   "CMakeFiles/SFML_GUI3.dir/main.cpp.obj.d"
+  "CMakeFiles/SFML_GUI3.dir/src/Chess/AI/AI.cpp.obj"
+  "CMakeFiles/SFML_GUI3.dir/src/Chess/AI/AI.cpp.obj.d"
   "CMakeFiles/SFML_GUI3.dir/src/Chess/Board/Board.cpp.obj"
   "CMakeFiles/SFML_GUI3.dir/src/Chess/Board/Board.cpp.obj.d"
   "CMakeFiles/SFML_GUI3.dir/src/Chess/Move/Move.cpp.obj"

@@ -27,11 +27,57 @@ struct PieceBehaviours{
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 namespace PresetBehaviours{
+    using namespace DIRECTIONS;
+
     const PieceBehaviours Null = { { {} , {0,0,0,0,0,0,0,0} }, { {} , {0,0,0,0,0,0,0,0} }, { {} , {0,0,0,0,0,0,0,0} }, { {} , {0,0,0,0,0,0,0,0} } };
     const PieceBehaviours Pawn = { { {DIRECTIONS::FORWARD} , {0,0,0,0,0,0,0,0} }, { {DIRECTIONS::FORWARD, DIRECTIONS::FORWARD+DIRECTIONS::FORWARD} , {0,0,0,0,0,0,0,0} }, 
     {{}  , {0,1,0,0,0,0,0,1}}, {{} , {0,1,0,0,0,0,0,1}} };
     const PieceBehaviours Bishop = { { {} , {0,16,0,16,0,16,0,16} }, { {} , {0,16,0,16,0,16,0,16} }, 
     {{}  , {0,16,0,16,0,16,0,16}}, {{} , {0,16,0,16,0,16,0,16}} };
+    const PieceBehaviours Rook = { { {} , {16,0,16,0,16,0,16,0} }, { {} , {16,0,16,0,16,0,16,0} }, 
+    {{}  , {16,0,16,0,16,0,16,0}}, {{} , {16,0,16,0,16,0,16,0}} };
+    const PieceBehaviours Queen = { { {} , {16,16,16,16,16,16,16,16} }, { {} , {16,16,16,16,16,16,16,16} }, 
+    {{}  , {16,16,16,16,16,16,16,16}}, {{} , {16,16,16,16,16,16,16,16}} };
+    const PieceBehaviours King = { { {} , {1,1,1,1,1,1,1,1} }, { {} , {1,1,1,1,1,1,1,1} }, 
+    {{}  , {1,1,1,1,1,1,1,1}}, {{} , {1,1,1,1,1,1,1,1}} };
+
+    const PieceBehaviours Knight = { { {
+        FORWARD+FORWARD+LEFT,
+        FORWARD+FORWARD+RIGHT,
+        RIGHT+RIGHT+FORWARD,
+        RIGHT+RIGHT+BACKWARD,
+        LEFT+LEFT+FORWARD,
+        LEFT+LEFT+BACKWARD,
+        BACKWARD+BACKWARD+LEFT,
+        BACKWARD+BACKWARD+RIGHT,
+    } , {0,0,0,0,0,0,0,0} }, { {
+        FORWARD+FORWARD+LEFT,
+        FORWARD+FORWARD+RIGHT,
+        RIGHT+RIGHT+FORWARD,
+        RIGHT+RIGHT+BACKWARD,
+        LEFT+LEFT+FORWARD,
+        LEFT+LEFT+BACKWARD,
+        BACKWARD+BACKWARD+LEFT,
+        BACKWARD+BACKWARD+RIGHT,
+    } , {0,0,0,0,0,0,0,0} },{ {
+        FORWARD+FORWARD+LEFT,
+        FORWARD+FORWARD+RIGHT,
+        RIGHT+RIGHT+FORWARD,
+        RIGHT+RIGHT+BACKWARD,
+        LEFT+LEFT+FORWARD,
+        LEFT+LEFT+BACKWARD,
+        BACKWARD+BACKWARD+LEFT,
+        BACKWARD+BACKWARD+RIGHT,
+    } , {0,0,0,0,0,0,0,0} },{ {
+        FORWARD+FORWARD+LEFT,
+        FORWARD+FORWARD+RIGHT,
+        RIGHT+RIGHT+FORWARD,
+        RIGHT+RIGHT+BACKWARD,
+        LEFT+LEFT+FORWARD,
+        LEFT+LEFT+BACKWARD,
+        BACKWARD+BACKWARD+LEFT,
+        BACKWARD+BACKWARD+RIGHT,
+    } , {0,0,0,0,0,0,0,0} } };
 
     
 

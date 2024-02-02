@@ -1,6 +1,11 @@
 [
 {
   "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\Chess\\AI\\AI.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Chess\\AI\\AI.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Chess/AI/AI.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/SFML_GUI3.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\SFML_GUI3.dir\\src\\Chess\\Board\\Board.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Chess\\Board\\Board.cpp",
   "file": "D:/Development/C++/SFML_GUI3/src/Chess/Board/Board.cpp"
 },
@@ -118,6 +123,11 @@
   "directory": "D:/Development/C++/SFML_GUI3/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\tests\\MainTesting.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\tests\\MainTesting.cpp",
   "file": "D:/Development/C++/SFML_GUI3/tests/MainTesting.cpp"
+},
+{
+  "directory": "D:/Development/C++/SFML_GUI3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/MyTests.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MyTests.dir\\src\\Chess\\AI\\AI.cpp.obj -c D:\\Development\\C++\\SFML_GUI3\\src\\Chess\\AI\\AI.cpp",
+  "file": "D:/Development/C++/SFML_GUI3/src/Chess/AI/AI.cpp"
 },
 {
   "directory": "D:/Development/C++/SFML_GUI3/build",

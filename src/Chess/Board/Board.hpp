@@ -26,6 +26,7 @@ class ChessBoard{
         std::vector<Move> GeneratePseudoLegalMoves_Capture(const Piece& piece); //Generate all pseudolegal captures for a piece at an index in the board
         std::vector<Move> GenerateLegalMoves(const Piece& piece);
         std::vector<Move> GenerateAllMoves();
+        std::vector<Move> GenerateAllMoves(bool colour); //overloaded function to allow me to specify generation of moves for a single colour at a time
         bool CheckLegality(Move move);
         void Play(Move move);
         void Unplay(Move move); //Allows backtracking up the game tree
@@ -39,3 +40,7 @@ class ChessBoard{
         const std::array<Piece, std::numeric_limits<uint8_t>::max()>& GetPieces();
 
 };
+
+
+
+ChessBoard Board_for_Level_N(int levelnum);

@@ -93,7 +93,10 @@ void ChessBoard::Play(Move move){
         king.HasMoved = true;
         rook.HasMoved = true;
 
-        int8_t dir = 2 * static_cast<int8_t>(move.from > move.to) - 1; //calculates the direction of castling
+        int8_t dir = 2 * static_cast<int8_t>(move.from < move.to) - 1; //calculates the direction of castling
+
+        //king.Position.x += 2*dir;
+        //rook.Position.x = king.Position.x - dir;
 
         std::swap(Grid.PieceGrid[move.to], Grid.PieceGrid[move.from + dir]);
         std::swap(Grid.PieceGrid[move.from], Grid.PieceGrid[move.from + 2*dir]);
@@ -140,10 +143,12 @@ void ChessBoard::Unplay(Move move){ //input parameter represents last played mov
         some_piece.HasMoved = !move.firstMove;
         captured_piece.Alive = true; 
 
+        some_piece.Position = IndexToVec(move.from);
+
+
     };
 
 };
-
 
 
 
@@ -260,6 +265,7 @@ std::vector<Move> ChessBoard::GeneratePseudoLegalMoves_NonCapture(const Piece& p
         }
     };
 
+
     //Now Deal with castling - a move exclusive to kingType pieces
     if (piece.Category == PieceCategory::King && !piece.HasMoved){
         
@@ -277,31 +283,32 @@ std::vector<Move> ChessBoard::GeneratePseudoLegalMoves_NonCapture(const Piece& p
 
                 if (isJumpTileActive){
 
-                    bool isJumpTileEmpty = !static_cast<bool>(Grid.PieceGrid[jumpPos]); //If is a piece at a square is a 0, then no piece is there
+                    bool isJumpTileTaken = static_cast<bool>(Grid.PieceGrid[jumpPos]); //If is a piece at a square is a 0, then no piece is there
                     bool isJumpTileContainingRook = (PieceList[Grid.PieceGrid[jumpPos]].Category == PieceCategory::Rook);
                     bool isJumpTilePieceSameColour = (PieceList[Grid.PieceGrid[jumpPos]].Team == team);
 
-                    if (!isJumpTileEmpty){
+                    if (isJumpTileTaken){
 
                         if (isJumpTileContainingRook && isJumpTilePieceSameColour){
 
-                            auto resultantMove = Move{currentPos, jumpPos, 0, false, true, !piece.HasMoved};
+                            auto resultantMove = Move{currentPos, jumpPos, 0, false, true, true};
                             moves.emplace_back(resultantMove);
 
-                        } else {
+                        } 
 
-                            break;
-
-                        }
+                        break;
 
                     };
 
-                };
+                } else {
+
+                    break;
+                }
 
                 slideCounter++;
-                sf::Vector2<int8_t> jumpMove = direction * slideCounter;
-                sf::Vector2<int8_t> jumpVec = piece.Position + jumpMove;
-                uint8_t jumpPos = VecToIndex(jumpVec); 
+                jumpMove = direction * slideCounter;
+                jumpVec = piece.Position + jumpMove;
+                jumpPos = VecToIndex(jumpVec); 
 
             };
 
@@ -419,11 +426,9 @@ std::vector<Move> ChessBoard::GeneratePseudoLegalMoves_Capture(const Piece& piec
                         resultantMove = Move{currentPos, jumpPos, JumpTilePiece, isJumpTilePromoting, false, !piece.HasMoved};
                         moves.emplace_back(resultantMove);
 
-                    } else {
+                    } 
 
-                        break;
-
-                    };
+                    break;
 
                 };
 
@@ -458,6 +463,19 @@ std::vector<Move> ChessBoard::GenerateLegalMoves(const Piece& piece){
     return legal_moves;
 };
 
+std::vector<Move> ChessBoard::GenerateAllMoves(bool colour){
+    std::vector<Move> all_moves;
+    for (int i{1}; i < last_piece_pointer; i++){
+        Piece p = PieceList[i];
+        if (p.Alive && p.Team == colour){
+            auto m = GenerateLegalMoves(p);
+            all_moves.insert(all_moves.end(), m.begin(), m.end());
+        }
+    }
+    return all_moves;
+
+};
+
 std::vector<Move> ChessBoard::GenerateAllMoves(){
     std::vector<Move> all_moves;
     for (int i{1}; i < last_piece_pointer; i++){
@@ -468,5 +486,67 @@ std::vector<Move> ChessBoard::GenerateAllMoves(){
         }
     }
     return all_moves;
+
+};
+
+ChessBoard Board_for_Level_N(int levelnum){
+    ChessBoard board = ChessBoard();
+    
+    switch (levelnum){
+
+        case (1):
+            board.SetTileMap(PresetTileMaps::Regular);
+            board.AddPiece(Pieces::PawnFactory({4,5}, false));
+            board.AddPiece(Pieces::PawnFactory({5,5}, false));
+            board.AddPiece(Pieces::PawnFactory({6,5}, false));
+            board.AddPiece(Pieces::PawnFactory({7,5}, false));
+            board.AddPiece(Pieces::PawnFactory({8,5}, false));
+            board.AddPiece(Pieces::PawnFactory({9,5}, false));
+            board.AddPiece(Pieces::PawnFactory({10,5}, false));
+            board.AddPiece(Pieces::PawnFactory({11,5}, false));
+
+            board.AddPiece(Pieces::PawnFactory({4,10}, true));
+            board.AddPiece(Pieces::PawnFactory({5,10}, true));
+            board.AddPiece(Pieces::PawnFactory({6,10}, true));
+            board.AddPiece(Pieces::PawnFactory({7,10}, true));
+            board.AddPiece(Pieces::PawnFactory({8,10}, true));
+            board.AddPiece(Pieces::PawnFactory({9,10}, true));
+            board.AddPiece(Pieces::PawnFactory({10,10}, true));
+            board.AddPiece(Pieces::PawnFactory({11,10}, true));
+
+            board.AddPiece(Pieces::KnightFactory({5,4}, false));
+            board.AddPiece(Pieces::KnightFactory({10,4}, false));
+
+            board.AddPiece(Pieces::KnightFactory({5,11}, true));
+            board.AddPiece(Pieces::KnightFactory({10,11}, true));
+
+            board.AddPiece(Pieces::BishopFactory({6,4}, false));
+            board.AddPiece(Pieces::BishopFactory({9,4}, false));
+
+            board.AddPiece(Pieces::BishopFactory({6,11}, true));
+            board.AddPiece(Pieces::BishopFactory({9,11}, true));
+
+            board.AddPiece(Pieces::RookFactory({4,4}, false));
+            board.AddPiece(Pieces::RookFactory({11,4}, false));
+
+            board.AddPiece(Pieces::RookFactory({4,11}, true));
+            board.AddPiece(Pieces::RookFactory({11,11}, true));
+
+            board.AddPiece(Pieces::QueenFactory({7,4}, false));
+
+            board.AddPiece(Pieces::QueenFactory({7,11}, true));
+
+            board.AddPiece(Pieces::KingFactory({8,4}, false));
+
+            board.AddPiece(Pieces::KingFactory({8,11}, true));
+
+            break;
+        default:
+            board.SetTileMap(PresetTileMaps::Basic);
+            break;
+
+    };
+
+    return board;
 
 }

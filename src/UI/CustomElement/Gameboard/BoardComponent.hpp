@@ -15,5 +15,6 @@ struct BoardComponent{
     std::array<MemSprite, Constants::MAX_BOARD_SIZE> Pieces;
     MemSprite CurrentPieceOverlay;
     std::array<MemSprite, Constants::MAX_BOARD_SIZE> PossibleMoves;
+    sf::Text Winner;
 };
 

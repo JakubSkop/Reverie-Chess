@@ -656,6 +656,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Chess/AI/AI.obj: src/Chess/AI/AI.cpp.obj
+.PHONY : src/Chess/AI/AI.obj
+
+# target to build an object file
+src/Chess/AI/AI.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/Chess/AI/AI.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.obj
+.PHONY : src/Chess/AI/AI.cpp.obj
+
+src/Chess/AI/AI.i: src/Chess/AI/AI.cpp.i
+.PHONY : src/Chess/AI/AI.i
+
+# target to preprocess a source file
+src/Chess/AI/AI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/Chess/AI/AI.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.i
+.PHONY : src/Chess/AI/AI.cpp.i
+
+src/Chess/AI/AI.s: src/Chess/AI/AI.cpp.s
+.PHONY : src/Chess/AI/AI.s
+
+# target to generate assembly for a file
+src/Chess/AI/AI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GUI3.dir\build.make CMakeFiles/SFML_GUI3.dir/src/Chess/AI/AI.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTests.dir\build.make CMakeFiles/MyTests.dir/src/Chess/AI/AI.cpp.s
+.PHONY : src/Chess/AI/AI.cpp.s
+
 src/Chess/Board/Board.obj: src/Chess/Board/Board.cpp.obj
 .PHONY : src/Chess/Board/Board.obj
 
@@ -1326,6 +1353,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Chess/AI/AI.obj
+	@echo ... src/Chess/AI/AI.i
+	@echo ... src/Chess/AI/AI.s
 	@echo ... src/Chess/Board/Board.obj
 	@echo ... src/Chess/Board/Board.i
 	@echo ... src/Chess/Board/Board.s
